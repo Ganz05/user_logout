@@ -1,0 +1,21 @@
+{% extends 'dummy.html' %}
+
+
+    {% block title %}
+    <title>Document</title>
+    {% endblock %}
+</head>
+
+
+{% block body_block %}
+    <center>
+        {% if un %}
+        <h1>welcome to home {{un}}</h1>
+
+        {% else %}
+        <h1>welcome</h1>
+        
+        {% endif %}
+    </center> 
+
+{% endblock %}
